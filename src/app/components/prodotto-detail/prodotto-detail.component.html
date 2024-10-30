@@ -1,0 +1,8 @@
+<div class="container text-center mt-5" *ngIf="prodotto">
+  <h1>{{ prodotto.title }}</h1>
+  <img class="img-fluid mb-4" [src]="prodotto.image"/>
+  <app-rating [rating]="prodotto.rating"></app-rating>
+  <button class="btn btn-dark mt-2" (click)="addToCard()">
+    <i class="bi bi-cart-plus">Aggiungi a carrello</i>
+  </button>
+</div>

@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container bg bg-secondary">
+    <a class="navbar-brand" href="#">Labzon</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a
+          class="nav-link"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Vetrina</a
+        >
+       <!-- <a
+          class="nav-link"
+          routerLink="/articoli"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Blog</a
+        >
+        <a
+          class="nav-link"
+          routerLink="/articoli/nuovo"
+          routerLinkActive="active"
+          >Nuovo Articolo</a
+        >-->
+        <a class="nav-link" routerLink="/contatti" routerLinkActive="active"
+          >Contatti</a
+        >
+        <a class="nav-link" routerLink="/chi-siamo" routerLinkActive="active"
+          >Chi siamo</a
+        >
+      </div>
+      <a class="nav-link me-1" routerLink="/carrello" routerLinkActive="active"
+          >Carrello</a
+        >
+      <app-carrello-mini></app-carrello-mini>
+    </div>
+  </div>
+</nav>
